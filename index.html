@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Movement Application</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+   <!--css code-->
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+      border-style: double;
+    }
+    .controls {
+      margin: 20px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1><strong><u><center>Vehicle Movement Simulation</center></u></strong></h1>
+  <div id="map"></div>
+
+  <div class="controls">
+    <center>
+    <button id="start-button" disabled>Start </button>
+    <p id="status">Select a starting point and an ending point on the map.</p>
+    </center>
+  </div>
+
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
+  <!-- Leaflet Routing Machine JavaScript -->
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
